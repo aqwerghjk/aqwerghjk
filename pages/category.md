@@ -3,6 +3,8 @@ layout: page
 title: category
 permalink: /category/
 ---
+* content
+{:toc}
 {% for post in site.categories.2015-4 %}
 	<li>{{ post.title }}</li>
 	<div class="img">
