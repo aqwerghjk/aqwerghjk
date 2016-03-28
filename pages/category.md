@@ -3,11 +3,9 @@ layout: page
 title: category
 permalink: /category/
 ---
-{% for category in site.categories.2015-4 %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
-    <ul>
-{% for posts in category %}
-{% for post in posts %}
+{% for post in site.categories.2015-1 %}
+    <li>{{ post.title }}</li>
+{% endfor %}
 	<div class="img">
 	<a href="{{ post.url | prepend: site.baseurl }}">
 	<img src="{{ post.img }}" alt="{{ post.title }}">
@@ -17,8 +15,4 @@ permalink: /category/
 	</div>
 	</a>
 	</div>
-{% endfor %}
- {% endfor %}
-    </ul>
-  </li>
 {% endfor %}
