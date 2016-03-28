@@ -15,4 +15,3 @@ permalink: /category/
 	</div>
 	</a>
 	</div>
-{% endfor %}
