@@ -4,7 +4,6 @@ title: category
 permalink: /category/
 ---
 {% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
     {% for posts in category %}
       {% for post in posts %}
         <div class="img">
@@ -14,5 +13,4 @@ permalink: /category/
 			</div>
       {% endfor %}
     {% endfor %}
-  </li>
 {% endfor %}
