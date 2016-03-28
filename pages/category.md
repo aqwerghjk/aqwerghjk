@@ -3,7 +3,7 @@ layout: page
 title: category
 permalink: /category/
 ---
-{% for category in site.categories[2015-4] %}
+{% for category in site.categories 2015-4 %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
 {% for posts in category %}
