@@ -3,7 +3,7 @@ layout: page
 title: category
 permalink: /category/
 ---
-{% for post in site.categories.2015-1 %}
+{% for post in site.categories.2015-4 %}
     <li>{{ post.title }}</li>
 {% endfor %}
 	<div class="img">
