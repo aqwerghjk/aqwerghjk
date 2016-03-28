@@ -1,10 +1,5 @@
 {% if page.comments %}
-    <!-- duoshuo.com javascript include code. -->    
-    {% if site.duoshuo_url %}
-      <div class="post-area post comment">
-        <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
-      </div>
-	  <div id="fb-root"></div>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -12,6 +7,5 @@
   js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=1687176554889910";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
-	{% endif %}
+  <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
 {% endif %}    
