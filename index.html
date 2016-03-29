@@ -43,7 +43,93 @@ title: Moeni
 <div role="navigation" id="search">
 	<input type="search" class="search-field" placeholder="Type here... " id="searchbox">
 	<i class="fa fa-times icon-remove-sign fa-lg"></i> 	
+	<ul class="results leaders"><!-- results lists --></ul>
 </div>
-<ul class="results leaders"><!-- results lists --></ul>
+<style type="text/css">
+<?php
+$week = array("sun", "mon", "tue", "wed", "thu", "fri", "sat");
+$s = $week[date("w")];
+if ($s == mon)
+echo 'td.mmon { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lmon{background-color:#CCCCCC;}';
+if ($s == tue)
+echo 'td.mtue { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.ltue{background-color:#CCCCCC;}';
+if ($s == wed)
+echo 'td.mwed { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lwed{background-color:#CCCCCC;}';
+if ($s == thu)
+echo 'td.mthu { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lthu{background-color:#CCCCCC;}';
+if ($s == fri)
+echo 'td.mfri { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lfri{background-color:#CCCCCC;}';;
+if ($s == sat)
+echo 'td.msat { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lsat{background-color:#CCCCCC;}';
+if ($s == sun)
+echo 'td.msun { font:bold 12pt Dotum; color:#EEEEEE;background-color:#333333;}td.lsun{background-color:#CCCCCC;}';
+?>
+td#mtd{font:bold 12pt Dotum;color:#EEEEEE;cursor:pointer;text-align:center;}
+td#mtd:hover{background-color:#333333; }
+</style>
+<table width="1000" height="30" align="center" cellpadding="0" cellspacing="0" style="background-color:#3366CC; border:1px solid #000066; margin-bottom:10px;">
+<tr>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=1';" class="mmon">월</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=2';" class="mtue">화</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=3';" class="mwed">수</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=4';" class="mthu">목</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=5';" class="mfri">금</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=6';" class="msat">토</td>
+	<td width="125" align="center" valign="middle" id="mtd" onClick="javascript:location.href='./search.php?type=0';" class="msun">일</td>
+</tr>
+</table>
+
+<!-- 상단 메뉴 끝 -->
+<!-- 메인 영역 시작 -->
+
+<style type="text/css">
+.tlist_prev { height:100px; text-align:center; position:relative; }
+.tlist_text { height:25px; text-align:center; }
+.tlist_text a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
+</style>
+
+<table width="1000" align="center" cellpadding="0" cellspacing="0">
+<tr bgcolor="#EEEEEE">
+	<td valign="top" width="125" class="lmon">
+	<!-- 월 -->
+		<div class="tlist_prev"><a href="./list.php?aid=414"><img class="thumb" alt="최약무패의 바하무트" title="최약무패의 바하무트" src="http://thumb.moe24.net/thumb/414.gif" width="100" height="100" border="0"></a></div>
+
+		</td>
+	
+	<td valign="top" width="125" class="ltue">
+	<!-- 화 -->
+		<div class="tlist_prev"><a href="./list.php?aid=295"><img class="thumb" alt="오소마츠 상" title="오소마츠 상" src="http://thumb.moe24.net/thumb/295.gif" width="100" height="100" border="0"></a></div>
+		</td>
+	
+	<td valign="top" width="125" class="lwed">
+	<!-- 수 -->
+		<div class="tlist_prev"><a href="./list.php?aid=8"><img class="thumb" alt="은혼" title="은혼" src="http://thumb.moe24.net/thumb/8.gif" width="100" height="100" border="0"></a></div>
+	<div class="tlist_text"><a href="./list.php?aid=8">은혼</a></div>
+		</td>
+	
+	<td valign="top" width="125" class="lthu">
+	<!-- 목 -->
+		<div class="tlist_prev"><a href="./list.php?aid=420"><img class="thumb" alt="이 멋진 세계에 축복을!" title="이 멋진 세계에 축복을!" src="http://thumb.moe24.net/thumb/420.gif" width="100" height="100" border="0"></a></div>
+		</td>
+	
+	<td valign="top" width="125" class="lfri">
+	<!-- 금 -->
+		<div class="tlist_prev"><a href="./list.php?aid=395"><img class="thumb" alt="암살교실 2기" title="암살교실 2기" src="http://thumb.moe24.net/thumb/395.gif" width="100" height="100" border="0"></a></div>
+
+		</td>
+	
+	<td valign="top" width="125" class="lsat">
+	<!-- 토 -->
+		<div class="tlist_prev"><a href="./list.php?aid=131"><img class="thumb" alt="갓 이터" title="갓 이터" src="http://thumb.moe24.net/thumb/131.gif" width="100" height="100" border="0"></a></div>
+
+		</td>
+	
+	<td valign="top" width="125" class="lsun">
+	<!-- 일 -->
+		<div class="tlist_prev"><a href="./list.php?aid=284"><img class="thumb" alt="하이큐!! 2기" title="하이큐!! 2기" src="http://thumb.moe24.net/thumb/284.gif" width="100" height="100" border="0"></a></div>
+	
+		</td>
+</tr>
+</table>
 </body>
 <html>
