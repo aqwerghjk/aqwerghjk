@@ -75,7 +75,6 @@ td#mtd:hover{background-color:#333333; }
 	<td valign="top" width="125" class="lmon">
 	<!-- 월 -->
 	{% for category in site.categories.2015-4 %}
-	{% for posts in category  %}
 	{% for post in posts %}
 		<div class="tlist_prev">
 		<a href="{{ page.url | prepend: site.baseurl }}">
@@ -83,7 +82,6 @@ td#mtd:hover{background-color:#333333; }
 		</a>
 		</div>
 		<div class="tlist_text"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
-	{% endfor %}
 	{% endfor %}
 	{% endfor %} 
 	</td>
