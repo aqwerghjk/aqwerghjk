@@ -59,7 +59,7 @@
         //function to count results
         function countResults(m){
             if(m.length){
-                searchResults.prepend('<h4>Found '+ searchResults.children().size()+' results</h4>');
+                searchResults.prepend('<h4>검색결과 '+ searchResults.children().size()+'건</h4>');
             }else{
                 searchResults.prepend('<h4>No results found!</h4>');
             }
