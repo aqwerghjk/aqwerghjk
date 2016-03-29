@@ -12,7 +12,7 @@
             jsonFormat      : 'title,category,desc,url,date,shortdate',
             template        : '<a href="{url}" title="{title}">{title}</a>',
             searchResults   : '.results',
-            searchResultsTitle   : '<h4>°Ë»ö°á°ú</h4>',
+            searchResultsTitle   : '<h4>ê²€ìƒ‰ê²°ê³¼</h4>',
             limit           : '10',
             noResults       : '<p>Oh shucks<br/><small>Nothing found :(</small></p>',
             resultsCount    : '0'
@@ -59,7 +59,7 @@
         //function to count results
         function countResults(m){
             if(m.length){
-                searchResults.prepend('<h4>°Ë»ö°á°ú '+ searchResults.children().size()+'°Ç</h4>');
+                searchResults.prepend('<h4>ê²€ìƒ‰ê²°ê³¼ '+ searchResults.children().size()+'ê±´</h4>');
             }else{
                 searchResults.prepend('<h4>No results found!</h4>');
             }
