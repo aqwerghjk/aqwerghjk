@@ -13,14 +13,6 @@ title: Moeni
    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Moeni</title>
 </head>
 <body>
-<div class="col-sm-12">
-  	<div class="page-content">
-		<div role="navigation" id="search">
-	  		<input type="search" class="search-field" placeholder="Type here... " id="searchbox">
-	  		<i class="fa fa-times icon-remove-sign fa-lg"></i>
-		</div>
-  	</div>  	
-</div>
 <script src="/static/js/simpleJekyllSearch.js"></script>
 <script>
 	{% include scripts/simple-search.html %}
@@ -46,6 +38,10 @@ title: Moeni
    </li>
    <li><a href='#'>About</a></li>
    <li><a href='#'>Contact</a></li>
+   <div role="navigation" id="search">
+	<input type="search" class="search-field" placeholder="Type here... " id="searchbox">
+	<i class="fa fa-times icon-remove-sign fa-lg"></i> 	
+</div>
 </ul>
 </div>
 <ul class="results leaders"><!-- results lists --></ul>
