@@ -63,7 +63,7 @@
 (function($){
 $(document).ready(function(){
 
-$("#cssmenu").menumaker({
+$("#menu").menumaker({
    title: "Menu",
    format: "multitoggle"
 });

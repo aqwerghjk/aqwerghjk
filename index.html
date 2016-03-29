@@ -18,7 +18,7 @@ layout: none
 <script>
 	{% include scripts/simple-search.html %}
 </script>
-<div id='cssmenu'>
+<div id='menu'>
 <ul>
    <li><a href='#'>Home</a></li>
    <li class='active'><a href='#'>Products</a>
@@ -39,6 +39,9 @@ layout: none
    </li>
    <li><a href='#'>About</a></li>
    <li><a href='#'>Contact</a></li>
+   {% for category in site.categories %}
+        <li><a href="{{ category | first }}">{{ category | first }}</a></li>
+      {% endfor %}
 </ul>
 </div>
 <div role="navigation" id="search">
