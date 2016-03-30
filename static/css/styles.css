@@ -19,7 +19,7 @@ table.main{
 	border:1px solid #000066;
 	margin-bottom:10px;
 }
-table {
+table,td {
 	border-spacing: 0;
 	padding: 0;
 }
