@@ -15,14 +15,13 @@ table.main{
 	width:100%;
 	max-width:1000px;
 	height: 30px;
-	padding: 0;
 	background-color:#FB79A7;
 	border:1px solid #000066;
 	margin-bottom:10px;
 }
 table {
 	border-spacing: 0;
-    border-collapse: separate;
+	padding: 0;
 }
 div.img {
     margin: 5px;
