@@ -1,19 +1,72 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div id="myArticle" class="col-sm-9">
-    <div class="post-area post">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-      </header>
-      <hr>
-      <article>
-        {{content}}
-      </article>
-      <hr>
-    </div>
+<table>
+<tbody><tr>
+	<td valign="top" width="690">
+	
+	<!-- 동영상 시작 -->
+	<iframe id="player" src="//moeni.net/player.php?path=오빠지만 사랑만 있으면 상관없잖아" width="100%" height="500px" allowfullscreen="allowfullscreen"></iframe>
+	<!-- 동영상 끝 -->
+	{{content}}
+	<!-- 정보 시작 -->
+	<div class="info_box">
+	<div class="info_name">{{ post.title }}</div>
+	<div class="info_text">총회수: {{ post.num }}</div>
+	<div class="info_text">게시일: {{ post.date | date: "%b %-d, %Y" }}</div>
+	<div style="width:100%; height:1px; background-color:#DDDDDD; margin:5px 0 5px 0;"></div>
+	</div>
+	<!-- 정보 끝 -->
+	
+	<!-- 덧글 시작 -->
 	{% include comments.html %}
-  </div>
-</div>
+	<!-- 덧글 끝 -->
+	
+	</td>
+	<td width="10"></td>
+	<td valign="top" width="300">
+	
+	<!-- 광고 시작 -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- mo -->
+	<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-9721987733707799"
+     data-ad-slot="5283134061"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	<!-- 광고 끝 -->
+	
+	<!-- 관련 영상 시작 -->
+	<div style="background-color:#FAFAFA; border:1px solid #DDDDDD; padding:5px 10px 5px 10px; margin-top:10px; box-sizing:border-box;">
+	<table width="100%" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td colspan="2" class="right_list_head"><a href="./list.php?aid=136">동영상 리스트</a></td>
+	</tr>
+	<tr><td colspan="2" height="1" bgcolor="#DDDDDD"></td></tr>
+		<tr class="right_list_link" onclick="javascript:location.href='./view.php?id=10448';" bgcolor="#DDDDDD">
+		<td width="120" style="padding:5px 0 5px 0;"><img src="" width="120" height="67" ondragstart="return false"></td>
+		<td valign="top" style="padding:5px 0 0 5px;">
+		<div class="right_list_name"><a href="./view.php?id=10448">24화 (完)</a></div>
+		<div class="right_list_text">조회수: 6744</div>
+		<div class="right_list_text">게시일: 2016-03-29</div>
+		</td>
+	</tr>
+		<tr class="right_list_link" onclick="javascript:location.href='./view.php?id=10400';">
+		<td width="120" style="padding:5px 0 5px 0;"><img src="http://img8.moe24.net/Akagami%20no%20Shirayukihime/%5BOhys-Raws%5D%20Akagami%20no%20Shirayukihime%202%20-%2011%2823%29%20%28MX%201280x720%20x264%20AAC%29_00_05_00.jpg" width="120" height="67" ondragstart="return false"></td>
+		<td valign="top" style="padding:5px 0 0 5px;">
+		<div class="right_list_name"><a href="./view.php?id=10400">23화</a></div>
+		<div class="right_list_text">조회수: 11193</div>
+		<div class="right_list_text">게시일: 2016-03-22</div>
+		</td>
+	</tr>
+	
+		</tbody></table>
+	</div>
+	<!-- 관련 영상 끝 -->
+	
+	</td>
+</tr>
+</tbody>
+</table>
