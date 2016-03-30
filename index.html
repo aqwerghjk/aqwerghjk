@@ -17,7 +17,7 @@ layout: default
 </table>
 <table>
 <tr>
-	<td valign="top" width="125" class="lmon">
+	<td valign="top" class="lmon">
 	<!-- 월 -->
 	{% for post in site.categories.mon %}
 		<div class="info">
@@ -28,7 +28,7 @@ layout: default
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
-	<td valign="top" width="125" class="ltue">
+	<td valign="top" class="ltue">
 	<!-- 화 -->
 		{% for post in site.categories.tue %}
 		<div class="info">
@@ -40,7 +40,7 @@ layout: default
 		{% endfor %} 
 		</td>
 	
-	<td valign="top" width="125" class="lwed">
+	<td valign="top" class="lwed">
 	<!-- 수 -->
 	{% for post in site.categories.wed %}
 		<div class="info">
@@ -52,7 +52,7 @@ layout: default
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" width="125" class="lthu">
+	<td valign="top" class="lthu">
 	<!-- 목 -->
 	{% for post in site.categories.thu %}
 		<div class="info">
@@ -64,7 +64,7 @@ layout: default
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" width="125" class="lfri">
+	<td valign="top" class="lfri">
 	<!-- 금 -->
 	{% for post in site.categories.fri %}
 		<div class="info">
@@ -76,7 +76,7 @@ layout: default
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" width="125" class="lsat">
+	<td valign="top" class="lsat">
 	<!-- 토 -->
 	{% for post in site.categories.sat %}
 		<div class="info">
@@ -88,7 +88,7 @@ layout: default
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" width="125" class="lsun">
+	<td valign="top" class="lsun">
 	<!-- 일 -->
 	{% for post in site.categories.sun %}
 		<div class="info">
