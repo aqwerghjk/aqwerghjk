@@ -6,14 +6,11 @@
 <div role="navigation" id="search">
 	<input type="search" class="search-field" placeholder="검색 " id="searchbox">
 	<i class="fa fa-times icon-remove-sign fa-lg"></i> 	
-	<ul class="results leaders"><!-- results lists --></ul>
+	<ul class="results leaders"></ul>
 </div>
 <div id='menu'>
 <ul>
    <li><a href='/'>Home</a></li>
-   {% for category in site.categories %}
-        <li><a href="{{ category | first }}">{{ category | first }}</a></li>
-      {% endfor %}
    <li class='active'><a href='#'>Products</a>
       <ul>
          <li><a href='#'>Product 1</a>
