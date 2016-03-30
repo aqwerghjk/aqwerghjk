@@ -3,13 +3,6 @@ table {
 	width:100%;
     max-width: 1000px;
 }
-td{
-	font:bold 12pt Dotum;
-	color:#EEEEEE;
-	cursor:pointer;
-	text-align:center;
-	width: 12.5%;
-}
 td.wtd:hover{
 	background-color:#333333;
 }
@@ -49,7 +42,7 @@ div.img:hover {
 }
 
 div.img img {
-    width: 100%;
+    width: 90%;
     height: auto;
 	max-height: 200px;
 }
