@@ -62,7 +62,7 @@ div.img a {
 display: inline-block;
 }
 img#info{
-	width: 100%;
+	width: 90%;
 	height: 100px;
 	text-align:center; position:relative;
 }
