@@ -14,7 +14,7 @@
             searchResults   : '.results',
             searchResultsTitle   : '<h4>검색결과</h4>',
             limit           : '10',
-            noResults       : '<p>Oh shucks<br/><small>Nothing found :(</small></p>',
+            noResults       : '<p>Oh shucks<br/><small>검색결과가 없습니다 :(</small></p>',
             resultsCount    : '0'
         }, options);
 
@@ -61,7 +61,7 @@
             if(m.length){
                 searchResults.prepend('<h4>검색결과 '+ searchResults.children().size()+'건</h4>');
             }else{
-                searchResults.prepend('<h4>No results found!</h4>');
+                searchResults.prepend('<h4>검색결과가 없습니다</h4>');
             }
         }
         
