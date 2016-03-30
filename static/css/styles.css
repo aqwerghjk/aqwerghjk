@@ -18,6 +18,10 @@ div.img img {
 div.img a {
 display: inline-block;
 }
+div#main {
+    max-width: 1000px;
+    margin: auto;
+}
 #menu{
     max-width: 1000px;
     text-align: center;
