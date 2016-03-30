@@ -53,11 +53,14 @@ div.img a {
 display: inline-block;
 }
 img.info{
-	width: 100px;
+	width: 10%;
+	max-width: 100px;
 	height: 100px;
 	text-align:center; position:relative;
 }
 div.info {
+	width: 12.5%;
+	max-width: 125px;
 	height:25px;
 	text-align:center;
 }
