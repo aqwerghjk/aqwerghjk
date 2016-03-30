@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 table {
-	width:100%
+	width:100%;
     max-width: 1000px;
 }
 td{
@@ -26,8 +26,6 @@ div#search input{
 	height: 36px;
 }
 table.main{
-	width:100%;
-	max-width:1000px;
 	height: 30px;
 	background-color:#FB79A7;
 	border:1px solid #000066;
