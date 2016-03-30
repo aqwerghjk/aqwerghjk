@@ -61,15 +61,15 @@ div.img img {
 div.img a {
 display: inline-block;
 }
-img.info{
+img#info{
 	width: 100%;
 	height: 100px;
 	text-align:center; position:relative;
 }
-div.info {
+div#info {
 	text-align:center;
 }
-div.info a {
+div#info a {
 	font:normal 10pt Dotum; 
 	color:#666666;
 	text-decoration:none;
