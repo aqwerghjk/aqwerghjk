@@ -8,6 +8,7 @@ td{
 	color:#EEEEEE;
 	cursor:pointer;
 	text-align:center;
+	width: 12.5%;
 }
 td.wtd:hover{
 	background-color:#333333;
@@ -30,6 +31,7 @@ table.main{
 	background-color:#FB79A7;
 	border:1px solid #000066;
 	margin-bottom:10px;
+	margin: auto;
 }
 table,td {
 	border-spacing: 0;
