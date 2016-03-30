@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+table {
+	width:100%
+    max-width: 1000px;
+}
 td{
-	width: 12.5%;
-	max-width: 125px;
 	font:bold 12pt Dotum;
 	color:#EEEEEE;
 	cursor:pointer;
