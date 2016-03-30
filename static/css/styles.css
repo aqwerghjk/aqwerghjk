@@ -8,16 +8,17 @@
 #menu ul li,
 #menu ul li a,
 #menu #menu-button {
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+margin: 0 auto;
+padding: 0;
+border: 0;
+list-style: none;
+line-height: 1;
+display: block;
+position: relative;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+z-index: 100;
+box-sizing: border-box;
 }
 #menu:after,
 #menu > ul:after {
