@@ -16,11 +16,13 @@ table.main{
 	max-width:1000px;
 	height: 30px;
 	padding: 0;
-	border-spacing: 0;
-    border-collapse: separate;
 	background-color:#FB79A7;
 	border:1px solid #000066;
 	margin-bottom:10px;
+}
+table {
+	border-spacing: 0;
+    border-collapse: separate;
 }
 div.img {
     margin: 5px;
