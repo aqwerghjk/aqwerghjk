@@ -2,96 +2,90 @@
 layout: default
 ---
 <style>
-td{
-	font:bold 12pt Dotum;
-	color:#EEEEEE;
-	cursor:pointer;
-	text-align:center;
-	width: 12.5%;
-}
+
 </style>
 <table>
 <tr>
-	<td valign="top" class="lmon">
+	<td class="mtd" valign="top" id="lmon">
 	<!-- 월 -->
 	{% for post in site.categories.mon %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
-	<td valign="top" class="ltue">
+	<td class="mtd" valign="top" id="ltue">
 	<!-- 화 -->
 		{% for post in site.categories.tue %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 		{% endfor %} 
 		</td>
 	
-	<td valign="top" class="lwed">
+	<td class="mtd" valign="top" id="lwed">
 	<!-- 수 -->
 	{% for post in site.categories.wed %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}" >
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}" >
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" class="lthu">
+	<td class="mtd" valign="top" id="lthu">
 	<!-- 목 -->
 	{% for post in site.categories.thu %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" class="lfri">
+	<td class="mtd" valign="top" id="lfri">
 	<!-- 금 -->
 	{% for post in site.categories.fri %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" class="lsat">
+	<td class="mtd" valign="top" id="lsat">
 	<!-- 토 -->
 	{% for post in site.categories.sat %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
 	
-	<td valign="top" class="lsun">
+	<td class="mtd" valign="top" id="lsun">
 	<!-- 일 -->
 	{% for post in site.categories.sun %}
-		<div class="info">
+		<div id="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
-		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</td>
 </tr>
