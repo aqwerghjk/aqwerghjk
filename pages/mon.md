@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /월/
 ---
 {% for post in site.categories.mon %}
 <div class="img">
