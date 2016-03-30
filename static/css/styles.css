@@ -1,4 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+div.img {
+    margin: 5px;
+    float: left;
+    width: 150px;
+	max-height: 300px;
+}	
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+	max-height: 200px;
+}
+div.img a {
+display: inline-block;
+}
 #menu{
     max-width: 1000px;
     text-align: center;
