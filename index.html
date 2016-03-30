@@ -12,16 +12,6 @@ layout: default
 	<td width="125" id="mtd" onClick="javascript:location.href='./일';" class="msun">일</td>
 </tr>
 </table>
-
-<!-- 상단 메뉴 끝 -->
-<!-- 메인 영역 시작 -->
-
-<style type="text/css">
-img.info { height:100px; text-align:center; position:relative; }
-div.info { height:25px; text-align:center; }
-div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
-</style>
-
 <table>
 <tr>
 	<td valign="top" width="125" class="lmon">
@@ -29,7 +19,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.mon %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -40,7 +30,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 		{% for post in site.categories.tue %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -52,7 +42,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.wed %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}" >
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -64,7 +54,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.thu %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -76,7 +66,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.fri %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -88,7 +78,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.sat %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -100,7 +90,7 @@ div.info a { font:normal 10pt Dotum; color:#666666; text-decoration:none; }
 	{% for post in site.categories.sun %}
 		<div class="info">
 		<a href="{{ post.url | prepend: site.baseurl }}">
-		<img class="info" alt="{{ post.title }}" title="{{ post.title }}" src="{{ post.img }}" width="100" height="100" border="0">
+		<img class="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
 		</div>
 		<div class="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>

@@ -42,6 +42,20 @@ div.img img {
 div.img a {
 display: inline-block;
 }
+img.info{
+	width: 100px;
+	height: 100px;
+	text-align:center; position:relative;
+}
+div.info {
+	height:25px;
+	text-align:center;
+}
+div.info a {
+	font:normal 10pt Dotum; 
+	color:#666666;
+	text-decoration:none;
+}
 img{
 	border: 0;
 }
