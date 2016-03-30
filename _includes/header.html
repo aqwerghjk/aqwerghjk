@@ -3,6 +3,9 @@
 <div id='menu'>
 <ul>
    <li><a href='/'>Home</a></li>
+   {% for category in site.categories %}
+        <li><a href="{{ category | first }}">{{ category | first }}</a></li>
+      {% endfor %}
    <li class='active'><a href='#'>Products</a>
       <ul>
          <li><a href='#'>Product 1</a>
@@ -21,9 +24,6 @@
    </li>
    <li><a href='#'>About</a></li>
    <li><a href='#'>Contact</a></li>
-   {% for category in site.categories %}
-        <li><a href="{{ category | first }}">{{ category | first }}</a></li>
-      {% endfor %}
 </ul>
 </div>
 <script src="/static/js/simpleJekyllSearch.js"></script>
