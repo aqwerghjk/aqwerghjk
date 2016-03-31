@@ -24,10 +24,12 @@ layout: default
 	td#p{
 		display:none;
 	}
+	td{
+		width:100%;
+	}
 }
 </style>
-
-	<td valign="top" width="690">
+<td valign="top" width="690">
 <div class="info_box">
 <div class="info_name">{{ page.title }}</div>
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
@@ -36,7 +38,7 @@ layout: default
 {{content}}
 <div>
 </td>
-	<td id="p" valign="top" width="300">
+<td id="p" valign="top" width="300">
 <div style="display: table-cell;">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- mo -->
