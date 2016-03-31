@@ -113,6 +113,8 @@ div#main {
 #menu {
   font-family: Montserrat, sans-serif;
   background: #333333;
+  max-width: 1000px;
+  margin: auto;
 }
 #menu > ul > li {
   float: left;
