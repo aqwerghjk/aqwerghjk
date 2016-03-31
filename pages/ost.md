@@ -6,7 +6,7 @@ permalink: /ost/
 <div class="img">
 <a href="{{ post.url | prepend: site.baseurl }}">
 <img src="{{ post.img }}" alt="{{ post.title }}">
-<div class="desc"><p style="text-align:center;margin-top:-26px;">{{ post.title }}{% if post.num %}<br>{{ post.num }}화{% endif %}<br>{{ post.date | date: "%b %-d, %Y" }}</p>
+<div class="desc"><p style="text-align:center;margin-top:-26px;background:#fff;">{{ post.title }}{% if post.num %}<br>{{ post.num }}화{% endif %}<br>{{ post.date | date: "%b %-d, %Y" }}</p>
 </div></a>
 </div>
 {% endfor %} 
