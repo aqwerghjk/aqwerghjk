@@ -25,7 +25,7 @@ div.wtd{
 }
 div.ctd{
 	font:bold 12pt Dotum;
-	color:lightgray;
+	background: lightgray;
 	cursor:pointer;
 	text-align:center;
 	width: 12.5%;
