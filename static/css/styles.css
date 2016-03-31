@@ -61,9 +61,10 @@ div.img img {
 	max-height: 200px;
 }
 div.img a {
-display: inline-block;
+	display: inline-block;
+	text-decoration:none;
 }
-img#info{
+img#info_img{
 	width: 85%;
 	height: 100px;
 	text-align:center;
@@ -72,7 +73,10 @@ div#info {
 	margin-top: 10px;	
 	text-align:center;
 }
-div#info a {
+div#info_txt {
+	text-align:center;
+}
+div#info_txt a {
 	font:normal 10pt Dotum; 
 	color:#666666;
 	text-decoration:none;
