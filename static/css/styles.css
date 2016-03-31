@@ -84,6 +84,9 @@ div#info_txt a {
 img{
 	border: 0;
 }
+p{
+	text-align: center;
+}
 div#main {
     max-width: 1000px;
     margin: auto;
