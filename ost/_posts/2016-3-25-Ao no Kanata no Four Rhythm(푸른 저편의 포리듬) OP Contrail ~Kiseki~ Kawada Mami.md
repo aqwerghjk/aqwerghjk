@@ -6,7 +6,7 @@ categories:
 - 2016-1-ost
 - 푸른 저편의 포리듬
 tags: [푸른 저편의 포리듬]
-img: http://1.bp.blogspot.com/-aNw2Nk8kGVo/VqeWvPoHs2I/AAAAAAAAAwM/J2CKagdyfPg/
+img: http://1.bp.blogspot.com/-aDOLS5DbhQA/VqeOd0KsP7I/AAAAAAAAAv8/fCyw9mfZACw/
 ---
 <img class="aligncenter" src="http://1.bp.blogspot.com/-aDOLS5DbhQA/VqeOd0KsP7I/AAAAAAAAAv8/fCyw9mfZACw/" alt="Ao no Kanata no Four Rhythm(푸른 저편의 포리듬) OP Contrail ~Kiseki~ Kawada Mami" />
 <p style="text-align: center;">Ao no Kanata no Four Rhythm(푸른 저편의 포리듬) OP Contrail ~Kiseki~ Kawada Mami</p>
