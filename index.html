@@ -2,11 +2,10 @@
 layout: default
 ---
 <div style="width: 100%";>
-	<div class="mtd" valign="top" id="lmon">
+	<div class="mtd" id="lmon">
 	<!-- 월 -->
 	{% for post in site.categories.mon %}
 		<div id="info">
-		<img src="http://ani24.net/image/up.png" style="position: relative; top: 3px; z-index: 2; right:8px;" ondragstart="return false">
 		<a href="{{ post.url | prepend: site.baseurl }}">
 		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
@@ -14,7 +13,7 @@ layout: default
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</div>
-	<div class="mtd" valign="top" id="ltue">
+	<div class="mtd" id="ltue">
 	<!-- 화 -->
 		{% for post in site.categories.tue %}
 		<div id="info">
@@ -26,7 +25,7 @@ layout: default
 		{% endfor %} 
 		</div>
 	
-	<div class="mtd" valign="top" id="lwed">
+	<div class="mtd" id="lwed">
 	<!-- 수 -->
 	{% for post in site.categories.wed %}
 		<div id="info">
@@ -38,7 +37,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="mtd" valign="top" id="lthu">
+	<div class="mtd" id="lthu">
 	<!-- 목 -->
 	{% for post in site.categories.thu %}
 		<div id="info">
@@ -50,7 +49,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="mtd" valign="top" id="lfri">
+	<div class="mtd" id="lfri">
 	<!-- 금 -->
 	{% for post in site.categories.fri %}
 		<div id="info">
@@ -62,7 +61,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="mtd" valign="top" id="lsat">
+	<div class="mtd" id="lsat">
 	<!-- 토 -->
 	{% for post in site.categories.sat %}
 		<div id="info">
@@ -74,7 +73,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="mtd" valign="top" id="lsun">
+	<div class="mtd" id="lsun">
 	<!-- 일 -->
 	{% for post in site.categories.sun %}
 		<div id="info">
