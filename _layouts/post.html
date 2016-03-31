@@ -20,16 +20,22 @@ layout: default
     font: bold 10pt Dotum;
     color: #777777;
 }
+td#p{
+	width:690px;
+	}
+td#a{
+	width:300px;
+	}
 @media (max-width: 768px){
 	td#p{
 		display:none;
 	}
-	td{
+	td#a{
 		width:100%;
 	}
 }
 </style>
-<td valign="top" width="690">
+<td id="a">
 <div class="info_box">
 <div class="info_name">{{ page.title }}</div>
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
@@ -38,7 +44,7 @@ layout: default
 {{content}}
 <div>
 </td>
-<td id="p" valign="top" width="300">
+<td id="p">
 <div style="display: table-cell;">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- mo -->

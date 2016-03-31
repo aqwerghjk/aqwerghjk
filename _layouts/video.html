@@ -9,6 +9,7 @@ layout: default
     border: 1px solid #DDDDDD;
     padding: 10px 10px 10px 10px;
     box-sizing: border-box;
+	max-width:100%;
 }
 .info_name {
     font: bold 14pt Dotum;
@@ -18,9 +19,23 @@ layout: default
 .info_text {
     font: bold 10pt Dotum;
     color: #777777;
+}
+td#p{
+	width:690px;
+	}
+td#a{
+	width:300px;
+	}
+@media (max-width: 768px){
+	td#p{
+		display:none;
+	}
+	td#a{
+		width:100%;
+	}
+}
 </style>
-
-	<td valign="top" width="690">
+<td id="a">
 {% if page.dir %}
 <iframe id="player" src="//api.moeni.net/player.php?path={{ page.dir }}" width="100%" height="450px" allowfullscreen></iframe>
 {% endif %}
@@ -33,8 +48,7 @@ layout: default
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
 </td>
-	<td width="10"></td>
-	<td valign="top" width="300">
+<td id="p">
 <div style="display: table-cell;">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- mo -->
