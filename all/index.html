@@ -1,69 +1,38 @@
 ---
 layout: default
 ---
-<div class="col-sm-3">
-    <div class="shadow-corner-curl">
-      <div class="categories-list-header">
-        Categories
-      </div>
-      
-      <a href="{{'/index.html' | prepend: site.baseurl}}" class="categories-list-item" cate="All">
-        All<span class="my-badge"> {{site.posts | size}}</span>
-      </a>
-      {% for category in site.categories order:ascending %}
-        <a href="javascript:;" class="categories-list-item" cate="{{ category | first }}">
-          {{ category | first }} <span class="my-badge">{{ category | last | size }}</span>
-        </a>
-      {% endfor %}
-    </div>
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
   </div>
-   <div class="paginator">
-              {% if paginator.total_pages > 1 %}
-              <!-- 分页代码 -->
-              {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">이전</a>
-        {% endif %}
+{% endfor %}
 
-        {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <span class="active">{{ page }}</span>
-            {% elsif page == 1 %}
-              <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-            {% else %}
-              <a href="/{{ site.paginate_path | prepend: site.url | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-        {% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
 
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음</a>
-        {% endif %}
-              {% endif %}
-      </div>
-	    <div class="post-list-body">
-	  	  <div class="all-posts" post-cate="All">
-          {% for post in paginator.posts %}
-			<div class="img">
-			<a href="{{ post.url | prepend: site.baseurl }}">
-			<img src="{{ post.img }}" alt="{{ post.title }}">
-             <div class="desc"><span class="">{{ post.title }}{% if post.num %}<br>{{ post.num }}화{% endif %}<br>{{ post.date | date: "%b %-d, %Y" }}</span></div></a>
-			</div>
-          {% endfor %}
-        </div>
-        <!-- <div class="posts-in-categories"> -->
-        {% for category in site.categories %}
-          <div post-cate="{{category | first}}">
-            {% for posts in category  %}
-              {% for post in posts %}
-                {% if post.url %}
-                 <div class="img">
-					{% if post.link %}<a class="html5lightbox" href="{{ post.link }}">
-					{% else %}<a href="{{ post.url | prepend: site.baseurl }}">{% endif %}
-					<img src="{{ post.img }}" alt="{{ post.title }}">
-					<div class="desc"><span class="">{{ post.title }}{% if post.num %}<br>{{ post.num }}화{% endif %}<br>{{ post.date | date: "%b %-d, %Y" }}</span></div></a>
-				 </div>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          </div>
-        {% endfor %} 
-  </div>
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
