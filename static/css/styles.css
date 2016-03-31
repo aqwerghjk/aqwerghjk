@@ -74,6 +74,9 @@ div.img a {
 	display: inline-block;
 	text-decoration:none;
 }
+.desc p{
+	margin: 0;
+}
 img#info_img{
 	width: 85%;
 	height: 100px;
