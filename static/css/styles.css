@@ -88,6 +88,9 @@ img{
 p{
 	text-align: center;
 }
+a{
+	text-decoration: none;
+}
 div#main {
     max-width: 1000px;
     margin: auto;
