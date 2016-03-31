@@ -5,7 +5,7 @@ layout: default
 	window.onload=function(){var e=new Date,m=new Array(7);m[0]="msun",m[1]="mmon",m[2]="mtue",m[3]="mwed",m[4]="mthu",m[5]="mfri",m[6]="msat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
 	</script>
 <div style="width: 100%;">
-	<div class="mtd" id="lmon">
+	<div class="wtd" id="lmon">
 	<!-- 월 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'mon' %}
@@ -18,7 +18,7 @@ layout: default
 	{% endif %}
 	{% endfor %}
 	</div>
-	<div class="mtd" id="ltue">
+	<div class="wtd" id="ltue">
 	<!-- 화 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'tue' %}
@@ -32,7 +32,7 @@ layout: default
 	{% endfor %}
 	</div>
 	
-	<div class="mtd" id="lwed">
+	<div class="wtd" id="lwed">
 	<!-- 수 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'wed' %}
@@ -46,7 +46,7 @@ layout: default
 	{% endfor %}
 	</div>
 	
-	<div class="mtd" id="lthu">
+	<div class="wtd" id="lthu">
 	<!-- 목 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'thu' %}
@@ -60,7 +60,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="mtd" id="lfri">
+	<div class="wtd" id="lfri">
 	<!-- 금 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'fri' %}
@@ -74,7 +74,7 @@ layout: default
 	{% endfor %}
 	</div>
 	
-	<div class="mtd" id="lsat">
+	<div class="wtd" id="lsat">
 	<!-- 토 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'sat' %}
@@ -88,7 +88,7 @@ layout: default
 	{% endfor %}
 	</div>
 	
-	<div class="mtd" id="lsun">
+	<div class="wtd" id="lsun">
 	<!-- 일 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'sun' %}

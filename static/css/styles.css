@@ -7,7 +7,7 @@ td.wtd{
 	color:#EEEEEE;
 	text-align:center;
 }
-div.mtd{
+div.wtd{
 	width: 12.5%;
 	display: table-cell;
 }
@@ -18,6 +18,13 @@ td.ctd{
 	background-color:#333333;
 	font:bold 12pt Dotum;
 	color:#EEEEEE;
+	cursor:pointer;
+	text-align:center;
+	width: 12.5%;
+}
+div.ctd{
+	font:bold 12pt Dotum;
+	color:lightgray;
 	cursor:pointer;
 	text-align:center;
 	width: 12.5%;
@@ -63,6 +70,9 @@ div.img img {
 div.img a {
 	display: inline-block;
 	text-decoration:none;
+}
+.desc{
+	background: lightgray;
 }
 img#info_img{
 	width: 85%;
