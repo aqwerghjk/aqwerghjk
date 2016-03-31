@@ -7,10 +7,7 @@ td.wtd{
 	color:#EEEEEE;
 	text-align:center;
 }
-div.wtd{
-	width: 12.5%;
-	display: table-cell;
-}
+
 td.wtd:hover{
 	background-color:#333333;
 }
@@ -22,9 +19,13 @@ td.ctd{
 	text-align:center;
 	width: 12.5%;
 }
+div.wtd{
+	width: 12.5%;
+	display: table-cell;
+}
 div.ctd{
 	font:bold 12pt Dotum;
-	color: lightgray;
+	color:lightgray;
 	cursor:pointer;
 	text-align:center;
 	width: 12.5%;
