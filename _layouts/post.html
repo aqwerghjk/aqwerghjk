@@ -3,7 +3,7 @@ layout: default
 ---
 <div style="text-align: center; max-width: 800px; margin: auto;">
 <div style="float: left;">
-<img src="{{ page.img }}" alt="{{ page.title }}" />
+<img src="{{ page.img }}" alt="{{ page.path }}" />
 </div>
 <div width="300px" height="250px" style="float: left;">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -22,12 +22,12 @@ window.onload=function(){ if (document.body.clientWidth > 800) {
 }
 }
 </script>
-<iframe id="player" src="//moeni.net/player.php?path={{ page.title }}" width="100%" height="400px" allowfullscreen></iframe>
+<iframe id="player" src="//moeni.net/player.php?path={{ page.path }}" width="100%" height="400px" allowfullscreen></iframe>
 {{content}}
 <div class="info_box">
 <div class="info_name">{{ page.title }}</div>
-<div class="info_text">총회수: {{ ppage.num }}</div>
-<div class="info_text">게시일: {{ page.date | date: "%b %-d, %Y" }}</div>
+<div class="info_text">총회수: {{ page.num }}</div>
+<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
 </div>
 {% include comments.html %}
