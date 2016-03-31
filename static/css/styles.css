@@ -81,26 +81,22 @@ div#main {
     max-width: 1000px;
     margin: auto;
 }
-#menu{
-    max-width: 1000px;
-    text-align: center;
-}
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 #menu,
 #menu ul,
 #menu ul li,
 #menu ul li a,
 #menu #menu-button {
-margin: 0 auto;
-padding: 0;
-border: 0;
-list-style: none;
-line-height: 1;
-display: block;
-position: relative;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-z-index: 100;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #menu:after,
 #menu > ul:after {

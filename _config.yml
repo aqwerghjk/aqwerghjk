@@ -24,6 +24,8 @@ disqus_url: "http://moeni.net"
 
 # Build settings
 markdown: kramdown
+paginate: 20
+paginate_path: "page:num"
 
 # highlight
 # highlighter: pygments
