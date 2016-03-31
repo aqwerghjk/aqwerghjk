@@ -4,9 +4,9 @@ layout: default
 <table>
 <tbody><tr>
 	<td valign="top" width="690">
-	<img src="{{ post.ing }}"/>
+	<img src="{{ page.ing }}" alt="{{ page.title }}" />
 	<!-- 동영상 시작 -->
-	<iframe id="player" src="" width="100%" height="500px" allowfullscreen="allowfullscreen"></iframe>
+	<iframe id="player" src="//moeni.net/player.php?path={{ page.title }}" width="100%" height="500px" allowfullscreen></iframe>
 	<!-- 동영상 끝 -->
 	{{content}}
 	<!-- 정보 시작 -->
