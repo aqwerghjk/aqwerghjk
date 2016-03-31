@@ -74,9 +74,6 @@ div.img a {
 	display: inline-block;
 	text-decoration:none;
 }
-.desc{
-	background: lightgray;
-}
 img#info_img{
 	width: 85%;
 	height: 100px;
