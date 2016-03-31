@@ -6,7 +6,7 @@ categories:
 - 2016-1-ost
 - 푸른 저편의 포리듬
 tags: [푸른 저편의 포리듬]
-img: https://4.bp.blogspot.com/-ExL6sG6jv7c/VsVvY5iRTcI/AAAAAAAAA4M/0ZXEJZdsiu4/
+img: https://3.bp.blogspot.com/-G9gHtw9PN9c/VsV1zR7mTMI/AAAAAAAAA5E/y6Qq8dj6cUM/
 ---
 <img class="aligncenter" src="https://3.bp.blogspot.com/-G9gHtw9PN9c/VsV1zR7mTMI/AAAAAAAAA5E/y6Qq8dj6cUM/" alt="Ao no Kanata no Four Rhythm(푸른 저편의 포리듬) ED" />
 <p style="text-align: center;">Ao no Kanata no Four Rhythm(푸른 저편의 포리듬) ED a-gain Ray</p>
