@@ -82,6 +82,7 @@ div#info_txt a {
 	text-decoration:none;
 }
 img{
+	max-width:100%;
 	border: 0;
 }
 p{
