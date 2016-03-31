@@ -44,13 +44,15 @@ td#a{
 {% endif %}
 <div>
 {{content}}
-<div>
+
 <div class="info_box">
 <div class="info_name">{{ page.title }}</div>
 <div class="info_text">총회수: {{ page.num }}</div>
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
+<div style="margin: 10px;">
 {% include comments.html %}
+</div>
 </td>
 <td id="p">
 <div style="display: table-cell;">
@@ -66,6 +68,7 @@ td#a{
 {% if page.img %}
 <img src="{{ page.img }}" alt="{{ page.path }}" style="width:100%;"/>
 {% endif %}
+<div>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="T8E6L33TZ4BBN">
