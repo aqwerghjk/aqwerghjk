@@ -7,11 +7,11 @@ permalink: /월/
 </script>
 {% for page in site.pages %}
 {% if page.categories contains 'mon' %}
-<div id="info">
+<div class="img">
 <a href="{{ page.url | prepend: site.baseurl }}">
-<img id="info" alt="{{ page.title }}" src="{{ page.img }}">
-</a>
+<img src="{{ page.img }}" alt="{{ page.title }}">
+<div class="desc"><p style="text-align: center;">{{ page.title }}{% if page.num %}<br>{{ page.num }}화{% endif %}<br>{{ page.date | date: "%b %-d, %Y" }}</p>
+</div></a>
 </div>
-<div id="info"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
 {% endif %}
 {% endfor %}
