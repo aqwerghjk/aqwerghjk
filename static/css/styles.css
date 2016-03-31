@@ -57,8 +57,8 @@ div.img {
     margin: 5px;
     float: left;
     width: 150px;
-	height: 280px;
-    border: 1px solid #fff;
+	height: 300px;
+    border: 1px solid #dddddd;
 }	
 
 div.img:hover {
