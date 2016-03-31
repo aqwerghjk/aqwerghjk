@@ -86,6 +86,7 @@ div#info {
 	text-align:center;
 }
 div#info_txt {
+	margin-top:-8px;
 	text-align:center;
 }
 div#info_txt a {
