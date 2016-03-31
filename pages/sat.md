@@ -2,6 +2,9 @@
 layout: default
 permalink: /토/
 ---
+<script>
+	window.onload=function(){document.getElementById("msat").className="ctd"};
+</script>
 {% for post in site.categories.sat %}
 <div class="img">
 <a href="{{ post.url | prepend: site.baseurl }}">

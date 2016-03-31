@@ -2,6 +2,9 @@
 layout: default
 permalink: /월/
 ---
+<script>
+	window.onload=function(){document.getElementById("mmon").className="ctd"};
+</script>
 {% for post in site.categories.mon %}
 <div class="img">
 <a href="{{ post.url | prepend: site.baseurl }}">

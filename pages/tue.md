@@ -2,6 +2,9 @@
 layout: default
 permalink: /화/
 ---
+<script>
+	window.onload=function(){document.getElementById("mtue").className="ctd"};
+</script>
 {% for post in site.categories.tue %}
 <div class="img">
 <a href="{{ post.url | prepend: site.baseurl }}">

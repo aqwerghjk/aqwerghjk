@@ -2,6 +2,9 @@
 layout: default
 permalink: /수/
 ---
+<script>
+	window.onload=function(){document.getElementById("mwed").className="ctd"};
+</script>
 {% for post in site.categories.wed %}
 <div class="img">
 <a href="{{ post.url | prepend: site.baseurl }}">
