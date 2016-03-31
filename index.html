@@ -10,10 +10,10 @@ layout: default
 	<!-- 월 -->
 	{% for post in site.categories.mon %}
 		<div id="info">
+		<img src="http://ani24.net/image/up.png" style="position: relative; top: 3px; z-index: 2; right:8px;" ondragstart="return false">
 		<a href="{{ post.url | prepend: site.baseurl }}">
 		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
 		</a>
-		<img src="http://ani24.net/image/up.png" style="position:absolute; top:-5px; right:8px;" ondragstart="return false">
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
