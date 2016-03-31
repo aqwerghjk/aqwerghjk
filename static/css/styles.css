@@ -29,6 +29,7 @@ div.ctd{
 	cursor:pointer;
 	text-align:center;
 	width: 12.5%;
+	display: table-cell;
 }
 div#search {
     text-align: center;
