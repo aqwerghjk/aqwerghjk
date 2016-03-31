@@ -57,7 +57,8 @@ div.img {
     margin: 5px;
     float: left;
     width: 150px;
-	max-height: 300px;
+	height: 280px;
+    border: 1px solid #fff;
 }	
 
 div.img:hover {
