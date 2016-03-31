@@ -3,7 +3,7 @@ layout: default
 ---
 <script>
 	window.onload=function(){var e=new Date,m=new Array(7);m[0]="msun",m[1]="mmon",m[2]="mtue",m[3]="mwed",m[4]="mthu",m[5]="mfri",m[6]="msat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
-	</script>
+</script>
 <div style="width: 100%;">
 	<div class="wtd" id="lmon">
 	<!-- 월 -->
@@ -60,7 +60,7 @@ layout: default
 	{% endfor %} 
 	</div>
 	
-	<div class="wtd" id="lfri">
+	<div class="wtd" id="mfri">
 	<!-- 금 -->
 	{% for page in site.pages %}
 	{% if page.categories contains 'fri' %}
