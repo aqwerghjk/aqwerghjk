@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div style="text-align: center;">
+<div style="text-align: center; max-width: 800px; margin: auto;">
 <div style="float: left;">
 <img src="{{ page.img }}" alt="{{ page.title }}" />
 </div>
@@ -23,14 +23,11 @@ window.onload=function(){ if (document.body.clientWidth > 800) {
 }
 }
 </script>
-<div style="max-width: 800px; margin: auto;">
 <iframe id="player" src="//moeni.net/player.php?path={{ page.title }}" width="100%" height="400px" allowfullscreen></iframe>
-</div>
 {{content}}
 <div class="info_box">
 <div class="info_name">{{ page.title }}</div>
 <div class="info_text">총회수: {{ ppage.num }}</div>
 <div class="info_text">게시일: {{ page.date | date: "%b %-d, %Y" }}</div>
-<div style="width:100%; height:1px; background-color:#DDDDDD; margin:5px 0 5px 0;"></div>
 </div>
 {% include comments.html %}
