@@ -16,7 +16,6 @@ layout: default
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </div>
-</div>
 <script>
 window.onload=function(){ if (document.body.clientWidth > 800) {
     document.getElementById("player").height ="600px";
@@ -29,5 +28,6 @@ window.onload=function(){ if (document.body.clientWidth > 800) {
 <div class="info_name">{{ page.title }}</div>
 <div class="info_text">총회수: {{ ppage.num }}</div>
 <div class="info_text">게시일: {{ page.date | date: "%b %-d, %Y" }}</div>
+</div>
 </div>
 {% include comments.html %}
