@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<table>
+<tbody><tr>
+{% if page.path %}
 <style>
 .info_box{
     background-color: #FAFAFA;
@@ -17,8 +20,7 @@ layout: default
     font: bold 10pt Dotum;
     color: #777777;
 </style>
-<table>
-<tbody><tr>
+
 	<td valign="top" width="690">
 <iframe id="player" src="//moeni.net/player.php?path={{ page.path }}" width="100%" height="450px" allowfullscreen></iframe>
 <div class="info_box">
@@ -26,6 +28,10 @@ layout: default
 <div class="info_text">총회수: {{ page.num }}</div>
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
+{% endif %}
+<div>
+{{content}}
+<div>
 </td>
 	<td width="10"></td>
 	<td valign="top" width="300">
@@ -39,10 +45,12 @@ layout: default
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
+{% if page.img %}
 <img src="{{ page.img }}" alt="{{ page.path }}" style="width:100%;"/>
+{% endif %}
 </div>
 </tr>
-		</tbody></table>
-{{content}}
+</tbody>
+</table>
 
 {% include comments.html %}
