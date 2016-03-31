@@ -3,7 +3,7 @@ layout: post
 title: "  Musaigen no Phantom World(무채한의 팬텀월드) OP Naked Dive SCREEN mode"
 date: 2016-3-15
 categories:
-- 2016-1
+- 2016-1-ost
 - 무채한의 펜텀월드
 tags: [무채한의 펜텀월드]
 img: https://lh3.googleusercontent.com/-SFFTcMMi3V8/Vqt5b30biJI/AAAAAAAAsRw/p2AHjcvKOQA/s0/Cover%25252002.jpg

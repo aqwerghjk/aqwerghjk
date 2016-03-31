@@ -3,7 +3,7 @@ layout: post
 title: "  Musaigen no Phantom World(무채한의 팬텀월드) ED Junshin Always"
 date: 2016-3-15
 categories:
-- 2016-1
+- 2016-1-ost
 - 무채한의 펜텀월드
 tags: [무채한의 펜텀월드]
 img: https://4.bp.blogspot.com/-4JtIT02BXHg/VsVHKuIKRjI/AAAAAAAAA3Y/KfpEBGuYi5M/
