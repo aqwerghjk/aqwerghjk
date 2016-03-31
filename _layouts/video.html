@@ -50,6 +50,7 @@ td#a{
 <div class="info_text">총회수: {{ page.num }}</div>
 <div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
+{% include comments.html %}
 </td>
 <td id="p">
 <div style="display: table-cell;">
@@ -69,5 +70,3 @@ td#a{
 </tr>
 </tbody>
 </table>
-
-{% include comments.html %}
