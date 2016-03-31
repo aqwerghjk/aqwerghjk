@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<div style="text-align: center; max-width: 800px; margin: auto;">
-<div style="float: left;">
-<img src="{{ page.img }}" alt="{{ page.path }}" />
+<div style="text-align: center; max-width: 800px; display: table-cell;">
+<iframe id="player" src="//moeni.net/player.php?path={{ page.path }}" width="100%" height="400px" allowfullscreen></iframe>
+<div class="info_box">
+<div class="info_name">{{ page.title }}</div>
+<div class="info_text">총회수: {{ page.num }}</div>
+<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 </div>
-<div width="300px" height="250px" style="float: left;">
+</div>
+<div style="display: table-cell;">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- mo -->
 	<ins class="adsbygoogle"
@@ -15,19 +19,9 @@ layout: default
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
+<img src="{{ page.img }}" alt="{{ page.path }}" />
 </div>
-<div class="info_box">
-<div class="info_name">{{ page.title }}</div>
-<div class="info_text">총회수: {{ page.num }}</div>
-<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
-</div>
-<script>
-window.onload=function(){ if (document.body.clientWidth > 800) {
-    document.getElementById("player").height ="600px";
-}
-}
-</script>
-<iframe id="player" src="//moeni.net/player.php?path={{ page.path }}" width="100%" height="400px" allowfullscreen></iframe>
+
 {{content}}
-</div>
+
 {% include comments.html %}
