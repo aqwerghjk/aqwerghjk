@@ -2,12 +2,13 @@ table {
 	width:100%;
     max-width: 1000px;
 }
-td.wtd,td.mtd{
+div.wtd,div.mtd{
 	font:bold 12pt Dotum;
 	color:#EEEEEE;
 	cursor:pointer;
 	text-align:center;
 	width: 12.5%;
+	display: table-cell;
 }
 td.wtd:hover{
 	background-color:#333333;

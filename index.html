@@ -1,12 +1,8 @@
 ---
 layout: default
 ---
-<style>
-
-</style>
-<table>
-<tr>
-	<td class="mtd" valign="top" id="lmon">
+<div style="width: 100%";>
+	<div class="mtd" valign="top" id="lmon">
 	<!-- 월 -->
 	{% for post in site.categories.mon %}
 		<div id="info">
@@ -17,8 +13,8 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
-	<td class="mtd" valign="top" id="ltue">
+	</div>
+	<div class="mtd" valign="top" id="ltue">
 	<!-- 화 -->
 		{% for post in site.categories.tue %}
 		<div id="info">
@@ -28,9 +24,9 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 		{% endfor %} 
-		</td>
+		</div>
 	
-	<td class="mtd" valign="top" id="lwed">
+	<div class="mtd" valign="top" id="lwed">
 	<!-- 수 -->
 	{% for post in site.categories.wed %}
 		<div id="info">
@@ -40,9 +36,9 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
+	</div>
 	
-	<td class="mtd" valign="top" id="lthu">
+	<div class="mtd" valign="top" id="lthu">
 	<!-- 목 -->
 	{% for post in site.categories.thu %}
 		<div id="info">
@@ -52,9 +48,9 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
+	</div>
 	
-	<td class="mtd" valign="top" id="lfri">
+	<div class="mtd" valign="top" id="lfri">
 	<!-- 금 -->
 	{% for post in site.categories.fri %}
 		<div id="info">
@@ -64,9 +60,9 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
+	</div>
 	
-	<td class="mtd" valign="top" id="lsat">
+	<div class="mtd" valign="top" id="lsat">
 	<!-- 토 -->
 	{% for post in site.categories.sat %}
 		<div id="info">
@@ -76,9 +72,9 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
+	</div>
 	
-	<td class="mtd" valign="top" id="lsun">
+	<div class="mtd" valign="top" id="lsun">
 	<!-- 일 -->
 	{% for post in site.categories.sun %}
 		<div id="info">
@@ -88,8 +84,5 @@ layout: default
 		</div>
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
-	</td>
-</tr>
-</table>
-</body>
-<html>
+	</div>
+</div>
