@@ -71,8 +71,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_text"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
-		<div class="info_text">{% if post.num %}회차수: {{ post.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ post.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
