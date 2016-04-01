@@ -23,14 +23,6 @@ div.wtd{
 	width: 12.5%;
 	display: table-cell;
 }
-div.ctd{
-	font:bold 12pt Dotum;
-	background: lightgray;
-	cursor:pointer;
-	text-align:center;
-	width: 12.5%;
-	display: table-cell;
-}
 div#search {
     text-align: center;
 }
@@ -76,23 +68,6 @@ div.img a {
 }
 .desc p{
 	margin: 0;
-}
-img#info_img{
-	width: 85%;
-	height: 100px;
-}
-div#info {
-	margin-top: 10px;	
-	text-align:center;
-}
-div#info_txt {
-	margin-top:-8px;
-	text-align:center;
-}
-div#info_txt a {
-	font:normal 10pt Dotum; 
-	color:#666666;
-	text-decoration:none;
 }
 img{
 	max-width:100%;
