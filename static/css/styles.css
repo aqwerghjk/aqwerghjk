@@ -79,6 +79,9 @@ p{
 a{
 	text-decoration: none;
 }
+li {
+    overflow: hidden;
+}
 div#main {
     max-width: 1000px;
     margin: auto;
