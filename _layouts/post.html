@@ -70,6 +70,15 @@ td#a{
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </div>
+<div>
+<ul class="tags">
+{% for tag in page.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+{% endfor %}
+</ul>
+</div>
 <div style="text-align: center;">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
