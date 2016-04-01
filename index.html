@@ -61,6 +61,7 @@ div.ctd{
 	color:#666666;
 	margin-bottom:5px;
 	text-align:left;
+	float: left;
 	}
 	div.info_text{
 	display:block;
@@ -78,10 +79,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
@@ -93,10 +94,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
@@ -109,10 +110,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
@@ -125,11 +126,11 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
-		</a>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
+		</a>>
 	{% endif %}
 	{% endfor %} 
 	</div>
@@ -157,10 +158,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
@@ -173,10 +174,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
