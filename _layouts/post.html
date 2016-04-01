@@ -45,7 +45,14 @@ td#a{
 </div>
 <div>
 {{content}}
+</div>
 <div>
+<ul>
+{% for tags in page.tags %}
+  <li>{{ tags }}</li>
+{% endfor %}
+</ul>
+</div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- ar -->
 <ins class="adsbygoogle"
@@ -69,15 +76,6 @@ td#a{
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-</div>
-<div>
-<ul class="tags">
-{% for tag in page.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-{% endfor %}
-</ul>
 </div>
 <div style="text-align: center;">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
