@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /files
+Disallow: /data
+Disallow: /bbs
+Disallow: /widgets
+Disallow: /?mid
+Disallow: /index.php?
+Disallow: /author
+Disallow: /plugin
+Disallow: /main
+Disallow: /theme
+Disallow: /web
+Disallow: /wp-content
+Disallow: /static
