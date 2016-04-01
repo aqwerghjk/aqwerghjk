@@ -5,7 +5,7 @@ date: 2016-3-15
 categories:
 - 2016-1-ost
 - 이 멋진 세계에 축복을
-tags: [이 멋진 세계에 축복을]
+tags: [이 멋진 세계에 축복을!]
 img: http://2.bp.blogspot.com/-pX6cTJcPmAI/VqfMWaf_xmI/AAAAAAAAAxI/eQzu98a3XHY/
 ---
 <img class="aligncenter" src="http://2.bp.blogspot.com/-pX6cTJcPmAI/VqfMWaf_xmI/AAAAAAAAAxI/eQzu98a3XHY/" alt="Kono Subarashii Sekai ni Syukufuku wo(이 멋진 세계에 축복을) OP" />
