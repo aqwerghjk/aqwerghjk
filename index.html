@@ -47,13 +47,12 @@ div.ctd{
 	}
 	div#info {
 	margin:0;
-	text-align:center;
+	float: left;
 	}
 	img#info_img{
 	width: 80px;
 	height: 80px;
 	margin: 10px;
-    float: left;
 	}
 	div#info_text {
     margin-top: 8px;
@@ -140,10 +139,10 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		</div>
 		<div id="info_text">{{ page.title }}</div>
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
 		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		</div>
 		</a>
 	{% endif %}
 	{% endfor %}
