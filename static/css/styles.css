@@ -79,7 +79,7 @@ p{
 a{
 	text-decoration: none;
 }
-.results leaders li{
+.results leaders li,leaders li{
     overflow: hidden;
 }
 div#main {
