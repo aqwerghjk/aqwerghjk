@@ -79,8 +79,8 @@ p{
 a{
 	text-decoration: none;
 }
-.results leaders li,leaders li{
-    overflow: hidden;
+li{
+    overflow: auto;
 }
 div#main {
     max-width: 1000px;
