@@ -2,8 +2,7 @@
 layout: default
 ---
 <script>
-	window.onload=function(){var e=new Date,m=new Array(7);m[0]="msun",m[1]="mmon",m[2]="mtue",m[3]="mwed",m[4]="mthu",m[5]="mfri",m[6]="msat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
-	window.onload=function(){var e=new Date,m=new Array(7);m[0]="lsun",m[1]="lmon",m[2]="ltue",m[3]="lwed",m[4]="lthu",m[5]="lfri",m[6]="lsat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
+	window.onload=function(){var e=new Date,m=new Array(7);m[0]="sun",m[1]="mon",m[2]="tue",m[3]="wed",m[4]="thu",m[5]="fri",m[6]="sat";var a=m[e.getDay()];document.getElementById("m"+a+"").className="ctd";document.getElementById("l"+a+"").className="ctd";};
 </script>
 <div style="width: 100%;">
 	<div class="wtd" id="lmon">
