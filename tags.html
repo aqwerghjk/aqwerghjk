@@ -17,7 +17,7 @@ for the tutorial on leaders w/ js -->
         {{ page.title }}
     </div>
     <div class="page-content">
-        <ul class="leaders">
+        <ul class="results leaders">
             {% for item in (0..num_words) %}{% unless forloop.last %}
             {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
             <li>
