@@ -5,6 +5,14 @@ layout: default
 	window.onload=function(){var e=new Date,m=new Array(7);m[0]="sun",m[1]="mon",m[2]="tue",m[3]="wed",m[4]="thu",m[5]="fri",m[6]="sat";var a=m[e.getDay()];document.getElementById("m"+a+"").className="ctd";document.getElementById("l"+a+"").className="ctd";};
 </script>
 <style>
+div.ctd{
+	font:bold 12pt Dotum;
+	background: lightgray;
+	cursor:pointer;
+	text-align:center;
+	width: 12.5%;
+	display: table-cell;
+}
 @media (max-width: 768px){
 	div.wtd{
 	display: none;
