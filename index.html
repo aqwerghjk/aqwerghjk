@@ -41,6 +41,7 @@ div.ctd{
     width: 100%;
     height: 100px;
 	display: block;
+	text-align:left;
 	}
 	img#info_img{
 	width: 80px;
@@ -88,6 +89,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
@@ -102,6 +105,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
@@ -116,6 +121,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %} 
 	</div>
@@ -130,6 +137,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
@@ -144,6 +153,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
@@ -158,6 +169,8 @@ div.ctd{
 		</a>
 		</div>
 		<div id="info_txt"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
 	{% endif %}
 	{% endfor %}
 	</div>
