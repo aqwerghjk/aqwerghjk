@@ -64,6 +64,7 @@ div.ctd{
 	}
 	div.info_text{
 	display:block;
+	text-align:left;
 	font:normal 11pt Dotum; 
 	color:#999999;
 	}
@@ -140,9 +141,9 @@ div.ctd{
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
-		<div id="info_text">{{ page.title }}</div>
+		<div id="info_text">{{ page.title }}
 		<div class="info_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
-		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="info_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
 		</div>
 		</a>
 	{% endif %}
