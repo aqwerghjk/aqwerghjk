@@ -4,6 +4,29 @@ layout: default
 <script>
 	window.onload=function(){var e=new Date,m=new Array(7);m[0]="sun",m[1]="mon",m[2]="tue",m[3]="wed",m[4]="thu",m[5]="fri",m[6]="sat";var a=m[e.getDay()];document.getElementById("m"+a+"").className="ctd";document.getElementById("l"+a+"").className="ctd";};
 </script>
+<style>
+@media (max-width: 768px){
+	div.wtd{
+	display: none;
+	}
+	div.ctd {
+    font: bold 12pt Dotum;
+    background: lightgray;
+    width: 100%;
+    height: 100px;
+	}
+	img#info_img{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+    float: left;
+	}
+	div#info_txt {
+    margin-top: 8px;
+    float: left;
+	}
+}
+</style>
 <div style="width: 100%;">
 	<div class="wtd" id="lmon">
 	<!-- 월 -->
