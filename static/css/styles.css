@@ -452,4 +452,10 @@ iframe {
     font: normal 11pt Dotum;
     color: #999999;
   }
+  div.img img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    float: left;
+  }
 }
