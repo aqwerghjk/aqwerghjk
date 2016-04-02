@@ -8,15 +8,10 @@ description: 애니스트리밍,애니OST다운사이트
 
 # baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
+
 github_username: aqwerghjk
 permalink: /:title/
-# this is the url root of the view source link on the footer page.
-# this is the url root of the create page link on the footer page.
-#########################################
-# for duoshuo.com commenting system, uncomment following line if you do not want to include duoshuo.com. 
-#duoshuo_shortname: lixizhi
-#duoshuo_url: "http://lixizhi.github.io"
+
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
 disqus_shortname: moeti
 disqus_url: "http://moeni.net"
@@ -25,9 +20,5 @@ disqus_url: "http://moeni.net"
 # Build settings
 markdown: kramdown
 paginate: 20
-paginate_path: "page:num"
-
-# highlight
-# highlighter: pygments
-# highlighter: rouge
-# highlighter: false
+paginate_path: page:num
+category: ani
