@@ -10,7 +10,9 @@ permalink: /토/
 <div class="img">
 <a href="{{ page.url | prepend: site.baseurl }}">
 <img src="{{ page.img }}" alt="{{ page.title }}">
-<div class="desc"><p>{{ page.title }}{% if page.num %}<br>{{ page.num }}화{% endif %}<br>{{ page.date | date: "%b %-d, %Y" }}</p>
+<div id="img_text">{{ page.title }}
+<div class="img_text">{% if page.num %}회차수: {{ page.num }}{% endif %}</div>
+<div class="img_text">갱신일: {{ page.date | date: "%b %-d, %Y" }}</div></div>
 </div></a>
 </div>
 {% endif %}
