@@ -60,10 +60,6 @@ div.img img {
     height: auto;
 	max-height: 200px;
 }
-div.img a {
-	display: inline-block;
-	text-decoration:none;
-}
 div#img_text {
 	text-align: center;
 }
@@ -444,7 +440,7 @@ iframe {
   }
   div#img_text {
     margin-top: 10px;
-    font: bold 14pt Dotum;
+    font: bold 11pt Dotum;
     color: #666666;
     text-align: left;
   }
