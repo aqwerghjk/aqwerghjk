@@ -21,4 +21,4 @@ disqus_url: "http://moeni.net"
 markdown: kramdown
 paginate: 20
 paginate_path: page:num
-category: ani
+category: category_name
