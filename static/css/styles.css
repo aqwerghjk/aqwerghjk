@@ -64,8 +64,11 @@ div.img a {
 	display: inline-block;
 	text-decoration:none;
 }
+div#img_text {
+	text-align: center;
+}
 div.img_text {
-	margin-top:-4px;
+	margin-top:10px;
 	text-align:center;
 	font:normal 10pt Dotum; 
 }
@@ -440,13 +443,13 @@ iframe {
     border: 1px solid lightgray;
   }
   div#img_text {
-    margin-top: 8px;
+    margin-top: 10px;
     font: bold 14pt Dotum;
     color: #666666;
-    margin-bottom: 8px;
     text-align: left;
   }
   div.img_text {
+    margin-top: 10px;
     text-align: left;
     font: normal 11pt Dotum;
     color: #999999;
