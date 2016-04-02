@@ -439,7 +439,7 @@ iframe {
     text-align: left;
     border: 1px solid lightgray;
   }
-  div#info_text {
+  div#img_text {
     margin-top: 8px;
     font: bold 14pt Dotum;
     color: #666666;
@@ -447,7 +447,7 @@ iframe {
     text-align: left;
     float: left;
   }
-  div.info_text {
+  div.img_text {
     text-align: left;
     font: normal 11pt Dotum;
     color: #999999;
