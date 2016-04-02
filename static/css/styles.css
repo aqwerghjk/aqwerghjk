@@ -434,13 +434,12 @@ iframe {
   }
   div.img {
 	float: none;
-    width: 100%;
+    width: 99%;
     height: 100px;
     border: 1px solid lightgray;
   }
   div#img_text {
     margin: 10px;
-	width: 95%;
     font: bold 11pt Dotum;
     color: #666666;
     text-align: left;
