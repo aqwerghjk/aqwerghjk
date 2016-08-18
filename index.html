@@ -74,7 +74,7 @@ div.ctd{
 <div style="width: 100%;">
 	<div class="wtd" id="lmon">
 	<!-- 월 -->
-	{% for page in site.post %}
+	{% for post in site.post %}
 	{% if post.categories contains 'mon' %}
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
