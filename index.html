@@ -74,8 +74,8 @@ div.ctd{
 <div style="width: 100%;">
 	<div class="wtd" id="lmon">
 	<!-- 월 -->
-	{% for page in site.pages %}
-	{% if page.categories contains 'mon' %}
+	{% for page in site.post %}
+	{% if post.categories contains 'mon' %}
 		<a href="{{ page.url | prepend: site.baseurl }}">
 		<div id="info">
 		<img id="info_img" alt="{{ page.title }}" src="{{ page.img }}">
