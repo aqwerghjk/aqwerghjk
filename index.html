@@ -1,1 +1,92 @@
-
+---
+layout: default
+---
+<script>
+	window.onload=function(){var e=new Date,m=new Array(7);m[0]="msun",m[1]="mmon",m[2]="mtue",m[3]="mwed",m[4]="mthu",m[5]="mfri",m[6]="msat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
+	</script>
+<div style="width: 100%;">
+	<div class="mtd" id="lmon">
+	<!-- 월 -->
+{% for page in site.pages %}
+{% if page.categories contains 'mon' %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+{% endif %}
+{% endfor %}
+	</div>
+	<div class="mtd" id="ltue">
+	<!-- 화 -->
+		{% for post in site.categories.tue %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+		{% endfor %} 
+		</div>
+	
+	<div class="mtd" id="lwed">
+	<!-- 수 -->
+	{% for post in site.categories.wed %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}" >
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+	{% endfor %} 
+	</div>
+	
+	<div class="mtd" id="lthu">
+	<!-- 목 -->
+	{% for post in site.categories.thu %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+	{% endfor %} 
+	</div>
+	
+	<div class="mtd" id="lfri">
+	<!-- 금 -->
+	{% for post in site.categories.fri %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+	{% endfor %} 
+	</div>
+	
+	<div class="mtd" id="lsat">
+	<!-- 토 -->
+	{% for post in site.categories.sat %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+	{% endfor %} 
+	</div>
+	
+	<div class="mtd" id="lsun">
+	<!-- 일 -->
+	{% for post in site.categories.sun %}
+		<div id="info">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+		<img id="info" alt="{{ post.title }}" src="{{ post.img }}">
+		</a>
+		</div>
+		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+	{% endfor %} 
+	</div>
+</div>
