@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /일/
+permalink: /category/일/
 ---
 <script>
 	window.onload=function(){document.getElementById("msun").className="ctd"};
