@@ -8,7 +8,7 @@ permalink: /완결애니/
 <img src="{{ post.img }}" alt="{{ post.title }}">
 <div id="img_text">{{ post.title }}
 <div class="img_text">{% if post.num %}회차수: {{ post.num }}{% endif %}</div>
-<div class="img_text">갱신일: {{ post.date | date: "%b %-d, %Y" }}</div></div>
+<div class="img_text">갱신일: {{ post.date | date: "%Y-%m-%d" }}</div></div>
 </div></a>
 </div>
 {% endfor %} 
