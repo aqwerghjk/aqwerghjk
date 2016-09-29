@@ -3,7 +3,21 @@ layout: default
 ---
 <script>
 	window.onload=function(){var e=new Date,m=new Array(7);m[0]="msun",m[1]="mmon",m[2]="mtue",m[3]="mwed",m[4]="mthu",m[5]="mfri",m[6]="msat";var a=m[e.getDay()];document.getElementById(a).className="ctd"};
-	</script>
+</script>
+<script type="text/javascript">
+var _0xb2ea=["\x3C\x6C\x69\x6E\x6B\x20\x72\x65\x6C\x3D\x22\x73\x74\x79\x6C\x65\x73\x68\x65\x65\x74\x22\x20\x68\x72\x65\x66\x3D\x22\x2F\x73\x74\x61\x74\x69\x63\x2F\x63\x73\x73\x2F\x6D\x61\x69\x6E\x2E\x63\x73\x73\x22\x3E","\x77\x72\x69\x74\x65"];document[_0xb2ea[1]](_0xb2ea[0])
+</script>
+<div id="container">
+<ul class="tab">
+<?php if(!isMobile()) : ?>
+	<li><a href="#date">메인</a></li>
+<?php endif; ?>
+	<li><a href="#new">업데이트</a></li>
+</ul>
+</div>
+<div class="tab_container">
+<?php if(!isMobile()) : ?>
+<div class="tab_content" id="date" style="display: block;">
 <div style="width: 100%;">
 	<div class="mtd" id="lmon">
 	<!-- 월 -->
@@ -87,4 +101,19 @@ layout: default
 		<div id="info"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
 	{% endfor %} 
 	</div>
+	<div class="wtd">
+{% for post in site.categories.ani %}
+<a href="<?php the_permalink() ?>">
+<div id="mtd">
+<?php if (time() - strtotime($wdate) < $upday) { ?>
+<img src="/img/up.png" style="position:absolute; right:8px;">
+<?php } ?>
+<img id="mtd_img" alt="<?php the_title()?>" src="<?php the_field('img')?>w100/">
+<div id="mtd_text"><?php limit_echo(get_the_title(),'40'); ?>
+<div class="mtd_text">회차수: <?php the_field('ep')?></div>
+<div class="mtd_date">갱신일: <?php the_modified_date('Y-m-d'); ?></div></div>
+</div>
+</a>
+{% endfor %}
+</div>
 </div>
