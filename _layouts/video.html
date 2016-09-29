@@ -40,9 +40,8 @@ td#a{
 </style>
 <td id="a">
 {% if page.dir %}
-<iframe id="player" src="//api.moeni.net/player.php?path={{ page.dir }}" width="100%" height="500px" allowfullscreen></iframe>
 <script type="text/javascript">
-var path='<?php echo $path ?>';
+var path='{{ page.dir }}';
 var _0xc15a=["\x68\x74\x74\x70\x3A\x2F\x2F\x76\x69\x64\x65\x6F\x33\x2E\x6D\x6F\x65\x6E\x69\x2E\x6E\x65\x74\x3A\x38\x38\x38\x30\x2F\x70\x6C\x61\x79\x65\x72\x2E\x70\x68\x70","\x50\x4F\x53\x54","\x68\x74\x6D\x6C","\x2E\x70\x6C\x61\x79\x65\x72\x61\x72\x65\x61","\uC624\uB958\x0A\x63\x6F\x64\x65\x3A","\x73\x74\x61\x74\x75\x73","\x0A","\x6D\x65\x73\x73\x61\x67\x65\x3A","\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74","\x65\x72\x72\x6F\x72\x3A","\x61\x6A\x61\x78","\x68\x65\x69\x67\x68\x74","\x23\x61\x64","\x30","\x65\x6D\x70\x74\x79","\x3C\x70\x3E\uAD11\uACE0\uAC00\x20\uC2EB\uC73C\uC2ED\uB2C8\uAE4C\x3F\x20\uD558\uC9C0\uB9CC\x20\uC774\x20\uC0AC\uC774\uD2B8\uB294\x20\uC720\uC9C0\uBE44\uC6A9\uC774\x20\uAD11\uACE0\uC218\uC785\uC73C\uB85C\x20\uCDA9\uB2F9\uB418\uACE0\x20\uC788\uC2B5\uB2C8\uB2E4\x2E\x3C\x2F\x70\x3E\x3C\x70\x3E\x41\x64\x62\x6C\x6F\x63\x6B\x20\uC124\uC815\uC5D0\uC11C\x20\uC774\x20\uB3C4\uBA54\uC778\uC744\x20\uBE7C\uC8FC\uC2DC\uAC70\uB098\x20\uC7A0\uC2DC\uAEBC\uC8FC\uC2DC\uAE38\x20\uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4\x2E\x3C\x2F\x70\x3E","\x61\x70\x70\x65\x6E\x64","\x3C\x70\x3E\uD50C\uB808\uC774\uC5B4\x20\uB85C\uB529\uC911\x3C\x2F\x70\x3E","\x72\x65\x61\x64\x79"];function player(_0x3d30x2){$[_0xc15a[10]]({url:_0xc15a[0],type:_0xc15a[1],data:{"\x70\x61\x74\x68":_0x3d30x2},dataType:_0xc15a[2],success:function(_0x3d30x3){$(_0xc15a[3])[_0xc15a[2]](_0x3d30x3)},error:function(_0x3d30x4,_0x3d30x5,_0x3d30x6){alert(_0xc15a[4]+ request[_0xc15a[5]]+ _0xc15a[6]+ _0xc15a[7]+ request[_0xc15a[8]]+ _0xc15a[6]+ _0xc15a[9]+ _0x3d30x6)}})}function check(){if($(_0xc15a[12])[_0xc15a[11]]()== _0xc15a[13]){$(_0xc15a[3])[_0xc15a[14]]();$(_0xc15a[3])[_0xc15a[16]](_0xc15a[15])}else {player(path)}}$(_0xc15a[3])[_0xc15a[18]](function(){$(_0xc15a[3])[_0xc15a[16]](_0xc15a[17]);check()})
 </script>
 <div class="playerarea">
@@ -62,18 +61,7 @@ var _0xc15a=["\x68\x74\x74\x70\x3A\x2F\x2F\x76\x69\x64\x65\x6F\x33\x2E\x6D\x6F\x
 </td>
 <td id="p">
 <div style="display: table-cell;">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- mo -->
-	<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-9721987733707799"
-     data-ad-slot="5283134061"></ins>
-	<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-{% if page.img %}
-<img src="{{ page.img }}" alt="{{ page.path }}" style="width:100%;"/>
-{% endif %}
+</div>
 <div style="text-align: center;">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
