@@ -1,3 +1,4 @@
+<div class="area"></div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
 <script>
  function GetURLParameter(sParam){
@@ -12,10 +13,10 @@
  }
 $.ajax({
   url: 'http://moeni.net',
+  type:'POST',
   dataType: 'html',
   success: function(data){
           $(".area").html(data);
           }
 });
 </script>
-<div class="area"></div>
