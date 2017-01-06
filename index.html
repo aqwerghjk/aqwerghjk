@@ -12,8 +12,9 @@
     }
  }
 $.ajax({
-  url: 'http://moeni.net',
+  url: 'http://211.225.64.144/test.php',
   type:'POST',
+  data:  { "path":"test" },
   dataType: 'html',
   success: function(data){
           $(".area").html(data);
