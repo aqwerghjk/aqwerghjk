@@ -1,1 +1,23 @@
-
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
+    <script>
+     function GetURLParameter(sParam){
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++){
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam){
+                return sParameterName[1];
+            }
+        }
+     }
+    var img = GetURLParameter('img');
+    </script>
+  </head>
+  <body style="margin:0">
+    <script type="text/javascript">
+    document.writre("<img src='"+img+"'/>");
+    </script>
+  </body>
+</html>
