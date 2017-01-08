@@ -2,6 +2,11 @@
   <head>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
     <script>
+      var keyStr = "ABCDEFGHIJKLMNOP" +
+               "QRSTUVWXYZabcdef" +
+               "ghijklmnopqrstuv" +
+               "wxyz0123456789+/" +
+               "=";
       function img(input) {
      var output = "";
      var chr1, chr2, chr3 = "";
@@ -58,8 +63,7 @@
   </head>
   <body style="margin:0">
     <script type="text/javascript">
-    document.write("<img src='"+aW1n+"'/>");
-      alert(img(aW1n));
+    document.write("<img src='"+img(aW1n)+"'/>");
     </script>
   </body>
 </html>
