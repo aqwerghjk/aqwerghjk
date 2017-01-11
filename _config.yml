@@ -10,7 +10,7 @@ description: 애니스트리밍,애니OST다운사이트
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 github_username: aqwerghjk
-permalink: /:title/img.jpg
+permalink: /:title/
 
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
 disqus_shortname: moeti
